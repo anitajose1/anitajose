@@ -17,13 +17,6 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 80%;
-    z-index: 9999;
 }
 
 .header-box {
@@ -62,7 +55,7 @@ header nav ul {
 header nav ul li {
     display: inline-block;
     margin-left: 10px;
-    border-bottom: #96C8CB solid;
+    border-bottom: #96C8CB solid 2px;
     padding: 0 8px 3px 8px;
     color: #96C8CB;
     background-size: 200% 200%;
@@ -86,6 +79,7 @@ header nav ul li a {
     color: #96C8CB;
     text-decoration: none;
 }
+/* Header end */
 
 /* Hero image start*/
 .hero {
@@ -114,26 +108,53 @@ header nav ul li a {
 /* Hero image end */
 
 /* About me section start */
-.about-me {
-    display: flex;
+.primary-container {
+    display: block;
     justify-content: center;
-    height: 150px;
     margin: 0 55px 0 150px;
-}
-
-.about-me-header-container {
-    display: flex;
-    border-right: #31343C solid 2px;
-    padding-right: 12px;
-}
-
-.about-me-para-container {
-    margin-left: 27px;
-    display: flex;
     flex-wrap: wrap;
 }
 
-.about-me-header {
+.about-me {
+    height: 150px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.work {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.contact-me {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.about-me-header-container, .work-header-container, .contact-me-header-container {
+    display: flex;
+    border-right: 2px solid #31343C;
+    padding-right: 12px;
+}
+
+.work-header-container {
+    margin-left: 9px;
+}
+
+.contact-details-container {
+    display: flex;
+}
+
+.contact-details-list {
+    list-style-type: none;
+}
+
+.about-me-header, .work-header, .contact-me-header {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: xx-large;
     color: #31343C;
@@ -141,10 +162,26 @@ header nav ul li a {
     text-align: right; 
 }
 
+.about-me-para-container, .projects-container, .contact-details-container {
+    margin-left: 27px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
 .about-me-para {
     display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     flex-wrap: wrap;
     color: #31343C;
 }
 /* About Me section end */
+
+/* Work section start */
+
+
+.surf-container {
+    height: 250px;
+    width: 100%;
+}
 

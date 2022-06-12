@@ -23,13 +23,13 @@
                 <!--List item element-->
                 <li class="box1">
                     <!--anchor elements-->
-                    <a class="box1-a" href="about-me">About Me</a>
+                    <a class="box1-a" href="#about-me">About Me</a>
                 </li>
                 <li class="box2">
-                    <a class="box2-a" href="work">Work</a>
+                    <a class="box2-a" href="#work">Work</a>
                 </li>
                 <li class="box3">
-                    <a class="box3-a" href="contact-me">Contact Me</a>
+                    <a class="box3-a" href="#contact-me">Contact Me</a>
                 </li>
                 <li class="box4">
                     <a class="box4-a" href="resume">Resume</a>
@@ -46,91 +46,85 @@
     </figure>
     <!--Hero image end-->
 
-    <!--About Me section-->
-    <section class="about-me">
-        <div class="about-me-header-container">
-            <h2 class="about-me-header">About Me</h2>
+    <section class="primary-container">
+        <!--About Me section-->
+        <div id="about-me" class="about-me">
+            <div class="about-me-header-container">
+                <h2 class="about-me-header">About Me</h2>
+            </div>
+            <div class="about-me-para-container">
+                <p class="about-me-para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, incidunt laudantium? Totam minima quo iste rem magni consequuntur, ad quasi iusto at explicabo tempore sequi ratione corrupti non blanditiis soluta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam libero molestias saepe iure veritatis magnam, provident fugiat praesentium mollitia quod amet dignissimos enim numquam! Corporis iure quasi incidunt perferendis nobis.
+                </p>
+                <p class="about-me-para">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio dolor, magni rem possimus enim eos aliquid esse dolores amet. Inventore consequatur numquam aut dicta quod officiis commodi sint voluptatem.
+                </p>
+            </div>
         </div>
-        <div class="about-me-para-container">
-            <p class="about-me-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, incidunt laudantium? Totam minima quo iste rem magni consequuntur, ad quasi iusto at explicabo tempore sequi ratione corrupti non blanditiis soluta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam libero molestias saepe iure veritatis magnam, provident fugiat praesentium mollitia quod amet dignissimos enim numquam! Corporis iure quasi incidunt perferendis nobis.
-            </p>
-            <p class="about-me-para">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus optio dolor, magni rem possimus enim eos aliquid esse dolores amet. Inventore consequatur numquam aut dicta quod officiis commodi sint voluptatem.
-            </p>
-        </div>
-    </section>
 
-    <!--Work section-->
-    <section>
-        <div>
-            <h2>Work</h2>
-        </div>
-        <div>
-            <div>
-                <div>
-                    <h3>Surf Report</h3>
-                    <h4>MERN Stack</h4>
+        <!--Work section-->
+        <div id="work" class="work">
+            <div class="work-header-container">
+                <h2 class="work-header">Work</h2>
+            </div>
+            <div class="projects-container">
+                <div class="surf-container">
+                    <div class="surf-text">
+                        <h3>Surf Report</h3>
+                        <h4>MERN Stack</h4>
+                    </div>
+                </div>
+                <div class="led-contained">
+                    <div class="led-text">
+                        <h3>LED Wall</h3>
+                        <h4>Node/IoT</h4>
+                    </div>
+                </div>
+                <div class="calculator-container">
+                    <div class="calculator-text">
+                        <h3>Calculator</h3>
+                        <h4>React/JavaScript/CSS</h4>
+                    </div>
+                </div>
+                <div class="ysf-container">
+                    <div class="ysf-text">
+                        <h3>Ye Shall find</h3>
+                        <h4>HTML/CSS</h4>
+                    </div>
+                </div>
+                <div class="rb-container">
+                    <div class="rb-text">
+                        <h3>Run Buddy</h3>
+                        <h4>HTML/CSS</h4>
+                    </div>
                 </div>
             </div>
         </div>
-        <div>
-            <div>
-                <div>
-                    <h3>LED Wall</h3>
-                    <h4>Node/IoT</h4>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div>
-                <div>
-                    <h3>Calculator</h3>
-                    <h4>React/JavaScript/CSS</h4>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div>
-                <div>
-                    <h3>Ye Shall find</h3>
-                    <h4>HTML/CSS</h4>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div>
-                <div>
-                    <h3>Run Buddy</h3>
-                    <h4>HTML/CSS</h4>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!--Contact Me section-->
-    <section>
-        <div>
-            <h2>Contact Me</h2>
-        </div>
-        <div>
-            <ul>
-                <li>
-                    000-000-0000
-                </li>
-                <li>
-                    <a href="mailto:anitajose119@gmail.com">anitajose119@gmail.com</a>
-                </li>
-                <li>
-                    <a href="github">GitHub</a>
-                </li>
-                <li>
-                    <a href="twitter">Twitter</a>
-                </li>
-                <li>
-                    <a href="linkedin">LinkedIn</a>
-                </li>
-            </ul>
+        <!--Contact Me section-->
+        <div id="contact-me" class="contact-me">
+            <div class="contact-me-header-container">
+                <h2 class="contact-me-header">Contact Me</h2>
+            </div>
+            <div class="contact-details-container">
+                <ul class="contact-details-list">
+                    <li>
+                        000-000-0000
+                    </li>
+                    <li>
+                        <a href="mailto:anitajose119@gmail.com">anitajose119@gmail.com</a>
+                    </li>
+                    <li>
+                        <a href="github">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="twitter">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="linkedin">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 </body>
