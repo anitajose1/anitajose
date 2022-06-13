@@ -10,7 +10,7 @@ body  {
 
 /* Header start */
 header {
-    padding: 10px 30px 10px 0;
+    padding: 10px 0 10px 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #31343C;
     color: #ffffff;
@@ -42,7 +42,7 @@ header h1 {
 
 header nav {
     padding-top: 15px;
-    margin-right: 30px;
+    margin-right: 8%;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
@@ -102,71 +102,61 @@ header nav ul li a {
     display: flex;
     justify-content: center;
     padding: 3px 10px;
-    margin-right: 60px;
+    margin-right: 8%;
     margin-bottom: 20px;
 }
 /* Hero image end */
 
 /* About me section start */
 .primary-container {
-    display: block;
-    justify-content: center;
-    margin: 0 55px 0 150px;
-    flex-wrap: wrap;
+    max-width: 80%;
+    margin-left: 12%;
+    margin-right: 8%;
 }
 
 .about-me {
-    height: 150px;
-    margin-bottom: 20px;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .work {
     display: flex;
-    justify-content: center;
-    height: 400px;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .contact-me {
     display: flex;
-    justify-content: center;
-    height: 150px;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .about-me-header-container, .work-header-container, .contact-me-header-container {
-    display: flex;
+    align-items: stretch;
     border-right: 2px solid #31343C;
-    padding-right: 12px;
-}
-
-.work-header-container {
-    margin-left: 9px;
-}
-
-.contact-details-container {
+    flex-basis: 14%;
     display: flex;
-}
-
-.contact-details-list {
-    list-style-type: none;
+    justify-content: flex-end;
 }
 
 .about-me-header, .work-header, .contact-me-header {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: xx-large;
     color: #31343C;
-    width: min-content;
-    text-align: right; 
+    text-align: right;
+    padding-right: 15px;
+    width: min-content; 
 }
 
 .about-me-para-container, .projects-container, .contact-details-container {
-    margin-left: 27px;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    flex-basis: 83%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .about-me-para {
@@ -175,13 +165,211 @@ header nav ul li a {
     flex-wrap: wrap;
     color: #31343C;
 }
-/* About Me section end */
-
-/* Work section start */
-
 
 .surf-container {
+    position: relative;
     height: 250px;
     width: 100%;
+    display: flex;
+    align-items: flex-end;
+    border: 3px solid #96C8CB;
+    margin-bottom: 8px;
+}
+
+.surf-container::before {
+    content: '';
+    position: absolute;
+    background-image: url("../images/surf-report.jpg");
+    background-position: left;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.75;
+}
+
+.surf-container:hover {
+    height: 250px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    border: 3px solid #96C8CB;
+    background-image: url("../images/surf-report.jpg");
+    background-position: left;
+}
+
+.led-container {
+    position: relative;
+    height: 120px;
+    width: 49.5%;
+    display: flex;
+    margin-right: 4px;
+    align-items: flex-end;
+    border: 3px solid #96C8CB;
+    margin-bottom: 8px;
+}
+
+.led-container::before {
+    content: '';
+    position: absolute;
+    background-image: url("../images/led.jpg");
+    background-position: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.75;
+}
+
+.led-container:hover {
+    position: relative;
+    height: 120px;
+    width: 49.5%;
+    display: flex;
+    margin-right: 4px;
+    align-items: flex-end;
+    border: 3px solid #96C8CB;
+    background-image: url("../images/led.jpg");
+    background-position: center;
+}
+
+.calculator-container {
+    position: relative;
+    height: 120px;
+    width: 49.5%;
+    display: flex;
+    margin-left: 4px;
+    align-items: flex-end;
+    border: 3px solid #96C8CB;
+    margin-bottom: 8px;
+}
+
+.calculator-container::before {
+    content: '';
+    position: absolute;
+    background-image: url("../images/calculator.jpg");
+    background-position: left;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.75;
+}
+
+.calculator-container:hover {
+    position: relative;
+    height: 120px;
+    width: 49.5%;
+    display: flex;
+    margin-left: 4px;
+    align-items: flex-end;
+    border: 3px solid #96C8CB;
+    background-image: url("../images/calculator.jpg");
+    background-position: left;
+}
+
+.ysf-container {
+    position: relative;
+    height: 120px;
+    width: 49.5%;
+    display: flex;
+    margin-right: 4px;
+    align-items: flex-end;
+    border: 3px solid #96C8CB;
+    text-decoration: none;
+}
+
+.ysf-container::before {
+    content: '';
+    position: absolute;
+    background-image: url("../images/ye-shall-find.jpg");
+    background-position: left 80%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.75;
+}
+
+.ysf-container:hover {
+    position: relative;
+    height: 120px;
+    width: 49.5%;
+    display: flex;
+    margin-right: 4px;
+    align-items: flex-end;
+    border: 3px solid #96C8CB;
+    background-image: url("../images/ye-shall-find.jpg");
+    background-position: left 80%;
+    text-decoration: none;
+}
+
+.rb-container {
+    position: relative;
+    height: 120px;
+    width: 49.5%;
+    display: flex;
+    margin-left: 4px;
+    align-items: flex-end;
+    border: 3px solid #96C8CB;
+    text-decoration: none;
+}
+
+.rb-container::before {
+    content: '';
+    position: absolute;
+    background-image: url("../images/run-buddy.jpg");
+    background-position: right;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.75;
+}
+
+.rb-container:hover {
+    position: relative;
+    height: 120px;
+    width: 49.5%;
+    display: flex;
+    margin-left: 4px;
+    align-items: flex-end;
+    border: 3px solid #96C8CB;
+    background-image: url("../images/run-buddy.jpg");
+    background-position: right;
+    text-decoration: none;
+}
+
+.surf-text, .led-text, .calculator-text, .ysf-text, .rb-text {
+    background-color: #96C8CB; 
+    position: relative;
+    color: #31343C;
+    padding: 6px 8px;
+    margin-bottom: 15px;
+}
+
+.surf-text h4, .led-text h4, .calculator-text h4, .ysf-text h4, .rb-text h4 {
+    font-weight: lighter;
+    font-size: smaller;
+}
+
+.contact-details-container ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    list-style-type: none;
+}
+
+.contact-details-list li {
+    padding-bottom: 3px;
+    border-bottom: #31343C solid 2px;
+}
+
+.contact-details-list li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #31343C;
 }
 
