@@ -319,7 +319,7 @@ header nav ul li a {
     content: '';
     position: absolute;
     background-image: url("../images/run-buddy.jpg");
-    background-position: right;
+    background-position: bottom right 20%;
     top: 0;
     right: 0;
     bottom: 0;
@@ -336,7 +336,7 @@ header nav ul li a {
     align-items: flex-end;
     border: 3px solid #96C8CB;
     background-image: url("../images/run-buddy.jpg");
-    background-position: right;
+    background-position: bottom right 20%;
     text-decoration: none;
 }
 
@@ -441,6 +441,14 @@ header nav ul li a {
     .contact-details-container {
         font-size: 15px;
     }
+
+    .ysf-container::before {
+        background-position: left;
+    }
+    
+    .ysf-container:hover {
+        background-position: left;
+    }
 }
 
 /* This will be applied to any screen between 903px and 840px */
@@ -479,10 +487,280 @@ header nav ul li a {
     }
 }
 
-/* This will be applied to any screen between 840px and 840px */
+/* This will be applied to any screen between 840px and 752px */
 @media screen and (max-width: 840px) {
 
     .about-me-header, .work-header, .contact-me-header {
         font-size: 18px;
+    }
+
+    header nav {
+        font-size: 18px;
+    }
+
+    .surf-container, .led-container, .calculator-container {
+        margin-bottom: 4px;
+    }
+}
+
+/* This will be applied to any screen between 752px and 686px */
+@media screen and (max-width: 752px) {
+
+    .about-me-header, .work-header, .contact-me-header {
+        font-size: 17px;
+    }
+
+    .header-box {
+        font-size: 14px;
+     }
+
+     header nav {
+        font-size: 17px;
+    }
+
+     .avatar {
+        width: 35px;
+        height: 35px;
+      }
+      
+      .subtitle {
+        font-size: 13px;
+        padding: 2px 9px;
+    }
+
+    .about-me-header, .work-header, .contact-me-header {
+        padding-right: 13px;
+        }
+
+    .about-me-para {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+    .contact-details-container {
+        font-size: 14px;
+    }
+
+    .led-container {
+        margin-right: 2px;
+    }
+    
+    .led-container:hover {
+        margin-right: 2px;
+    }
+    
+    .calculator-container {
+        margin-left: 2px;
+    }
+    
+    .calculator-container:hover {
+        margin-left: 2px;
+    }
+    
+    .ysf-container {
+        margin-right: 2px;
+    }
+    
+    .ysf-container:hover {
+        margin-right: 2px;
+    }
+    
+    .rb-container {
+        margin-left: 2px;
+    }
+    
+    .rb-container:hover {
+        margin-left: 2px;
+    }
+
+    .surf-text, .led-text, .calculator-text, .ysf-text, .rb-text {
+        padding: 5px 7px;
+        margin-bottom: 14px;
+        font-size: smaller;
+    }
+    
+    .surf-text h4, .led-text h4, .calculator-text h4, .ysf-text h4, .rb-text h4 {
+        font-weight: lighter;
+        font-size: small;
+    }
+}
+
+/* This will be applied to any screen between 690px and 658px */
+@media screen and (max-width: 690px) {
+
+    .about-me-header, .work-header, .contact-me-header {
+        font-size: 15px;
+    }
+
+    .header-box {
+        font-size: 13px;
+     }
+
+     header nav {
+        font-size: 16px;
+    }
+
+     .avatar {
+        width: 30px;
+        height: 30px;
+      }
+      
+      .subtitle {
+        font-size: 12px;
+        padding: 1px 8px;
+    }
+
+    .about-me-header, .work-header, .contact-me-header {
+        padding-right: 13px;
+        }
+
+    .about-me-para {
+        font-size: 13px;
+        line-height: 1.3;
+    }
+}
+
+/* This will be applied to any screen between 658px and 635px */
+@media screen and (max-width: 658px) {
+    
+    header {
+    padding: 0 0 8px 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    }
+    
+    .header-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .header-box img {
+    margin: 0;
+    padding-bottom: 0.5px;
+    width: 34px;
+    height: 34px;
+    }
+    
+    header h1 {
+    padding: 2px 0 0 11px;
+    font-size: 32px;
+    }
+    
+    header nav {
+    display: flex;
+    padding: 17px, 0, 0, 0;
+    margin: 0;
+    }
+
+    .hero {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    margin-bottom: 25px;
+    }
+
+    .subtitle {
+    margin: 0 0 10px 0;
+    }
+
+    .about-me-header, .work-header, .contact-me-header {
+    padding-right: 11px;
+    }
+
+    .surf-container {
+        height: 170px;
+    }
+}
+
+/* This will be applied to any screen between 635px and 500px */
+@media screen and (max-width: 635px) {
+    
+    .about-me, .work, .contact-me {
+    display: block;
+    }
+    
+    .about-me-header-container, .work-header-container, .contact-me-header-container {
+    width: 100%;
+    border-right: 0;
+    border-bottom: 2px solid #31343C;
+    }
+    
+    .about-me-header, .work-header, .contact-me-header {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 4px;
+    text-align: left;
+    font-size: 17px;
+    }
+
+    .about-me-para-container, .projects-container, .contact-details-container {
+        margin-top: 13px;
+    }
+
+    .surf-container {
+        height: 150px;
+    }
+}
+
+/* This will be applied to any screen below 500px */
+@media screen and (max-width: 500px) {
+
+    .projects-container {
+        display: block;
+    }
+
+    .surf-container {
+        height: 150px;
+    }
+
+    .surf-container:hover {
+        height: 150px;
+        width: 100%;
+        display: flex;
+    }
+
+    .led-container, .ysf-container {
+        width: 100%;
+        height: 150px;
+        margin-right: 0;
+    }
+
+    .calculator-container, .rb-container {
+        width: 100%;
+        height: 150px;
+        margin-left: 0;
+    }
+
+    .led-container:hover, .ysf-container:hover {
+        height: 150px;
+        width: 100%;
+        display: flex;
+        margin-right: 0px;
+    }
+
+    .calculator-container:hover, .rb-container:hover {
+        height: 150px;
+        width: 100%;
+        display: flex;
+        margin-left: 0px;
+    }
+
+    .ysf-container {
+        margin-bottom: 4px;
+    }
+
+    .contact-details-container ul {
+        display: block;
+        width: auto;
+    }
+
+    .l1, .l2, .l3, .l4, .l5 {
+        display: block;
+        width: fit-content;
     }
 }
