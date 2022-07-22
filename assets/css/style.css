@@ -268,7 +268,7 @@ header nav ul li a {
     background-position: left;
 }
 
-.ysf-container {
+.movie-mate-container {
     position: relative;
     height: 120px;
     width: 49.5%;
@@ -279,7 +279,7 @@ header nav ul li a {
     text-decoration: none;
 }
 
-.ysf-container::before {
+.movie-mate-container::before {
     content: '';
     position: absolute;
     background-image: url("../images/ye-shall-find.jpg");
@@ -291,7 +291,7 @@ header nav ul li a {
     opacity: 0.75;
 }
 
-.ysf-container:hover {
+.movie-mate-container:hover {
     position: relative;
     height: 120px;
     width: 49.5%;
@@ -340,7 +340,7 @@ header nav ul li a {
     text-decoration: none;
 }
 
-.surf-text, .led-text, .calculator-text, .ysf-text, .rb-text {
+.surf-text, .led-text, .calculator-text, .movie-mate-text, .rb-text {
     background-color: #96C8CB; 
     position: relative;
     color: #31343C;
@@ -348,7 +348,7 @@ header nav ul li a {
     margin-bottom: 15px;
 }
 
-.surf-text h4, .led-text h4, .calculator-text h4, .ysf-text h4, .rb-text h4 {
+.surf-text h4, .led-text h4, .calculator-text h4, .movie-mate-text h4, .rb-text h4 {
     font-weight: lighter;
     font-size: smaller;
 }
@@ -395,11 +395,11 @@ header nav ul li a {
         margin-left: 3px;
     }
     
-    .ysf-container {
+    .movie-mate-container {
         margin-right: 3px;
     }
     
-    .ysf-container:hover {
+    .movie-mate-container:hover {
         margin-right: 3px;
     }
     
@@ -442,11 +442,11 @@ header nav ul li a {
         font-size: 15px;
     }
 
-    .ysf-container::before {
+    .movie-mate-container::before {
         background-position: left;
     }
     
-    .ysf-container:hover {
+    .movie-mate-container:hover {
         background-position: left;
     }
 }
@@ -470,11 +470,11 @@ header nav ul li a {
         margin-left: 2.5px;
     }
     
-    .ysf-container {
+    .movie-mate-container {
         margin-right: 2.5px;
     }
     
-    .ysf-container:hover {
+    .movie-mate-container:hover {
         margin-right: 2.5px;
     }
     
@@ -557,11 +557,11 @@ header nav ul li a {
         margin-left: 2px;
     }
     
-    .ysf-container {
+    .movie-mate-container {
         margin-right: 2px;
     }
     
-    .ysf-container:hover {
+    .movie-mate-container:hover {
         margin-right: 2px;
     }
     
@@ -573,13 +573,13 @@ header nav ul li a {
         margin-left: 2px;
     }
 
-    .surf-text, .led-text, .calculator-text, .ysf-text, .rb-text {
+    .surf-text, .led-text, .calculator-text, .movie-mate-text, .rb-text {
         padding: 5px 7px;
         margin-bottom: 14px;
         font-size: smaller;
     }
     
-    .surf-text h4, .led-text h4, .calculator-text h4, .ysf-text h4, .rb-text h4 {
+    .surf-text h4, .led-text h4, .calculator-text h4, .movie-mate-text h4, .rb-text h4 {
         font-weight: lighter;
         font-size: small;
     }
@@ -724,7 +724,7 @@ header nav ul li a {
         display: flex;
     }
 
-    .led-container, .ysf-container {
+    .led-container, .movie-mate-container {
         width: 100%;
         height: 150px;
         margin-right: 0;
@@ -736,7 +736,7 @@ header nav ul li a {
         margin-left: 0;
     }
 
-    .led-container:hover, .ysf-container:hover {
+    .led-container:hover, .movie-mate-container:hover {
         height: 150px;
         width: 100%;
         display: flex;
@@ -750,7 +750,7 @@ header nav ul li a {
         margin-left: 0px;
     }
 
-    .ysf-container {
+    .movie-mate-container {
         margin-bottom: 4px;
     }
 
