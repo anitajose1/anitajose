@@ -1,26 +1,45 @@
+:root {
+    --primary-color: #bad9c9;
+    --secondary-color: #0B3954;
+    --tertiary-color: #E6B89C;  
+    --fourth-color:
+  }
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+  
+
 body  {
-    background-color: #EDEDF7 ;
+    background-color: var(--tertiary-color) ;
 }
 
 /* Header start */
 header {
     padding: 10px 0 10px 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #31343C;
-    color: #ffffff;
+    background-color: var(--secondary-color);
+    /* color: #ffffff; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
 }
 
 .header-box {
-   background-color: #96C8CB; 
+   background-color: var(--primary-color); 
    display: flex;
    font-size: 17px;
 }
@@ -35,7 +54,7 @@ header {
   }
 
 header h1 {
-    color: #31343C;
+    color: var(--secondary-color);
     padding: 3px 9px 3px 11px
 }
 
@@ -43,7 +62,7 @@ header nav {
     padding-top: 2vh;
     margin-right: 8%;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
 }
 
@@ -54,15 +73,15 @@ header nav ul {
 header nav ul li {
     display: inline-block;
     margin-left: 10px;
-    border-bottom: #96C8CB solid 2px;
+    border-bottom: var(--primary-color) solid 2px;
     padding: 0 8px 3px 8px;
-    color: #96C8CB;
+    color: var(--primary-color);
     background-size: 200% 200%;
     transition: background-position 0.5s;
 }
 
 .box1, .box2, .box3, .box4 {
-    background-image: linear-gradient(to top, #96c8cb 50%, #32343c 0%);
+    background-image: linear-gradient(to top, var(--primary-color) 50%, #0B3954 0%);
     background-position: top;  
 }
 
@@ -71,23 +90,23 @@ header nav ul li {
 }
 
 .box1:hover > .box1-a, .box2:hover > .box2-a, .box3:hover > .box3-a, .box4:hover > .box4-a {
-    color: #31343C;
+    color: var(--secondary-color);
 }
 
 header nav ul li a {
-    color: #96C8CB;
+    color: var(--primary-color);
     text-decoration: none;
 }
-/* Header end */
+/* Header end */  
 
 /* Hero image start*/
 .hero {
     height: 250px;
     width: 100%;
     margin-bottom: 30px;
-    background-image: url("../images/hero-bg.jpg");
+    background-image: url("../images/bright-leaves.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     opacity: 95%;
     display: flex;
     justify-content: end;
@@ -95,9 +114,9 @@ header nav ul li a {
 }
 
 .subtitle {
-    background-color: #96C8CB;
-    color: #31343C;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 15px;
     display: flex;
     justify-content: center;
@@ -136,16 +155,16 @@ header nav ul li a {
 
 .about-me-header-container, .work-header-container, .contact-me-header-container {
     align-items: stretch;
-    border-right: 2px solid #31343C;
+    border-right: 2px solid var(--secondary-color);
     flex-basis: 14%;
     display: flex;
     justify-content: flex-end;
 }
 
 .about-me-header, .work-header, .contact-me-header {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: x-large;
-    color: #31343C;
+    color: var(--secondary-color);
     text-align: right;
     padding-right: 15px;
     width: min-content; 
@@ -155,117 +174,50 @@ header nav ul li a {
     display: flex;
     flex-wrap: wrap;
     flex-basis: 83%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .about-me-para {
     display: flex;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     flex-wrap: wrap;
-    color: #31343C;
+    color: black;
 }
 
-.surf-container {
+.scheduler-container {
     position: relative;
     height: 250px;
     width: 100%;
     display: flex;
     align-items: flex-end;
-    border: 3px solid #96C8CB;
+    border: 3px solid var(--primary-color);
     margin-bottom: 8px;
+    text-decoration: none;
 }
 
-.surf-container::before {
+.scheduler-container::before {
     content: '';
     position: absolute;
-    background-image: url("../images/surf-report.jpg");
-    background-position: left;
+    background-image: url("../images/scheduler.jpg");
+    background-position: right 30%;
+    background-size: cover;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    opacity: 0.75;
+    opacity: 0.80;
 }
 
-.surf-container:hover {
+.scheduler-container:hover {
     height: 250px;
     position: relative;
     width: 100%;
     display: flex;
     align-items: flex-end;
-    border: 3px solid #96C8CB;
-    background-image: url("../images/surf-report.jpg");
-    background-position: left;
-}
-
-.led-container {
-    position: relative;
-    height: 120px;
-    width: 49.5%;
-    display: flex;
-    margin-right: 4px;
-    align-items: flex-end;
-    border: 3px solid #96C8CB;
-    margin-bottom: 8px;
-}
-
-.led-container::before {
-    content: '';
-    position: absolute;
-    background-image: url("../images/led.jpg");
-    background-position: center;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0.75;
-}
-
-.led-container:hover {
-    position: relative;
-    height: 120px;
-    width: 49.5%;
-    display: flex;
-    margin-right: 4px;
-    align-items: flex-end;
-    border: 3px solid #96C8CB;
-    background-image: url("../images/led.jpg");
-    background-position: center;
-}
-
-.calculator-container {
-    position: relative;
-    height: 120px;
-    width: 49.5%;
-    display: flex;
-    margin-left: 4px;
-    align-items: flex-end;
-    border: 3px solid #96C8CB;
-    margin-bottom: 8px;
-}
-
-.calculator-container::before {
-    content: '';
-    position: absolute;
-    background-image: url("../images/calculator.jpg");
-    background-position: left;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0.75;
-}
-
-.calculator-container:hover {
-    position: relative;
-    height: 120px;
-    width: 49.5%;
-    display: flex;
-    margin-left: 4px;
-    align-items: flex-end;
-    border: 3px solid #96C8CB;
-    background-image: url("../images/calculator.jpg");
-    background-position: left;
+    border: 3px solid var(--primary-color);
+    background-image: url("../images/scheduler.jpg");
+    background-position: right 30%;
+    background-size: cover;
 }
 
 .movie-mate-container {
@@ -275,15 +227,17 @@ header nav ul li a {
     display: flex;
     margin-right: 4px;
     align-items: flex-end;
-    border: 3px solid #96C8CB;
+    border: 3px solid var(--primary-color);
+    margin-bottom: 8px;
     text-decoration: none;
 }
 
 .movie-mate-container::before {
     content: '';
     position: absolute;
-    background-image: url("../images/ye-shall-find.jpg");
-    background-position: left 80%;
+    background-image: url("../images//background-image.webp");
+    background-position: top;
+    background-size: cover;
     top: 0;
     right: 0;
     bottom: 0;
@@ -298,9 +252,85 @@ header nav ul li a {
     display: flex;
     margin-right: 4px;
     align-items: flex-end;
-    border: 3px solid #96C8CB;
-    background-image: url("../images/ye-shall-find.jpg");
-    background-position: left 80%;
+    border: 3px solid var(--primary-color);
+    background-image: url("../images/background-image.webp");
+    background-position: top;
+    background-size: cover;
+}
+
+.password-container {
+    position: relative;
+    height: 120px;
+    width: 49.5%;
+    display: flex;
+    margin-left: 4px;
+    align-items: flex-end;
+    border: 3px solid var(--primary-color);
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+.password-container::before {
+    content: '';
+    position: absolute;
+    background-image: url("../images/password.jpg");
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.80;
+}
+
+.password-container:hover {
+    position: relative;
+    height: 120px;
+    width: 49.5%;
+    display: flex;
+    margin-left: 4px;
+    align-items: flex-end;
+    border: 3px solid var(--primary-color);
+    background-image: url("../images/password.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.taskmaster-pro-container {
+    position: relative;
+    height: 120px;
+    width: 49.5%;
+    display: flex;
+    margin-right: 4px;
+    align-items: flex-end;
+    border: 3px solid var(--primary-color);
+    text-decoration: none;
+}
+
+.taskmaster-pro-container::before {
+    content: '';
+    position: absolute;
+    background-image: url("../images/business-g65fd0d89f_1920.jpg");
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.80;
+}
+
+.taskmaster-pro-container:hover {
+    position: relative;
+    height: 120px;
+    width: 49.5%;
+    display: flex;
+    margin-right: 4px;
+    align-items: flex-end;
+    border: 3px solid var(--primary-color);
+    background-image: url("../images/business-g65fd0d89f_1920.jpg");
+    background-position: center;
+    background-size: cover;
     text-decoration: none;
 }
 
@@ -311,20 +341,21 @@ header nav ul li a {
     display: flex;
     margin-left: 4px;
     align-items: flex-end;
-    border: 3px solid #96C8CB;
+    border: 3px solid var(--primary-color);
     text-decoration: none;
 }
 
 .rb-container::before {
     content: '';
     position: absolute;
-    background-image: url("../images/run-buddy.jpg");
-    background-position: bottom right 20%;
+    background-image: url("../images/running-shoes-g071dfa150_1920.jpg");
+    background-position: center;
+    background-size: cover;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    opacity: 0.75;
+    opacity: 0.80;
 }
 
 .rb-container:hover {
@@ -334,21 +365,22 @@ header nav ul li a {
     display: flex;
     margin-left: 4px;
     align-items: flex-end;
-    border: 3px solid #96C8CB;
-    background-image: url("../images/run-buddy.jpg");
-    background-position: bottom right 20%;
+    border: 3px solid var(--primary-color);
+    background-image: url("../images/running-shoes-g071dfa150_1920.jpg");
+    background-position: center;
+    background-size: cover;
     text-decoration: none;
 }
 
-.surf-text, .led-text, .calculator-text, .movie-mate-text, .rb-text {
-    background-color: #96C8CB; 
+.scheduler-text, .movie-mate-text, .password-text, .taskmaster-pro-text, .rb-text {
+    background-color: var(--primary-color); 
     position: relative;
-    color: #31343C;
+    color: var(--secondary-color);
     padding: 6px 8px;
     margin-bottom: 15px;
 }
 
-.surf-text h4, .led-text h4, .calculator-text h4, .movie-mate-text h4, .rb-text h4 {
+.scheduler-text h4, .movie-mate-text h4, .password-text h4, .taskmaster-pro-text h4, .rb-text h4 {
     font-weight: lighter;
     font-size: smaller;
 }
@@ -363,36 +395,20 @@ header nav ul li a {
 
 .contact-details-list li {
     padding-bottom: 3px;
-    border-bottom: #31343C solid 2px;
+    border-bottom: var(--secondary-color) solid 2px;
 }
 
 .contact-details-list li a {
     display: inline-block;
     text-decoration: none;
-    color: #31343C;
+    color: black;
 }
 
 /* MEDIA QUERY - This will be applied to any screen between 1234px and 965px */
 @media screen and (max-width: 1234px) {
 
-      .surf-container {
+      .scheduler-container {
         margin-bottom: 6px;
-    }
-    
-    .led-container {
-        margin-right: 3px;
-    }
-    
-    .led-container:hover {
-        margin-right: 3px;
-    }
-    
-    .calculator-container {
-        margin-left: 3px;
-    }
-    
-    .calculator-container:hover {
-        margin-left: 3px;
     }
     
     .movie-mate-container {
@@ -400,6 +416,22 @@ header nav ul li a {
     }
     
     .movie-mate-container:hover {
+        margin-right: 3px;
+    }
+    
+    .password-container {
+        margin-left: 3px;
+    }
+    
+    .password-container:hover {
+        margin-left: 3px;
+    }
+    
+    .taskmaster-pro-container {
+        margin-right: 3px;
+    }
+    
+    .taskmaster-pro-container:hover {
         margin-right: 3px;
     }
     
@@ -442,11 +474,11 @@ header nav ul li a {
         font-size: 15px;
     }
 
-    .movie-mate-container::before {
+    .taskmaster-pro-container::before {
         background-position: left;
     }
     
-    .movie-mate-container:hover {
+    .taskmaster-pro-container:hover {
         background-position: left;
     }
 }
@@ -454,27 +486,27 @@ header nav ul li a {
 /* This will be applied to any screen between 903px and 840px */
 @media screen and (max-width: 903px) {
     
-    .led-container {
-        margin-right: 2.5px;
-    }
-    
-    .led-container:hover {
-        margin-right: 2.5px;
-    }
-    
-    .calculator-container {
-        margin-left: 2.5px;
-    }
-    
-    .calculator-container:hover {
-        margin-left: 2.5px;
-    }
-    
     .movie-mate-container {
         margin-right: 2.5px;
     }
     
     .movie-mate-container:hover {
+        margin-right: 2.5px;
+    }
+    
+    .password-container {
+        margin-left: 2.5px;
+    }
+    
+    .password-container:hover {
+        margin-left: 2.5px;
+    }
+    
+    .taskmaster-pro-container {
+        margin-right: 2.5px;
+    }
+    
+    .taskmaster-pro-container:hover {
         margin-right: 2.5px;
     }
     
@@ -491,14 +523,14 @@ header nav ul li a {
 @media screen and (max-width: 840px) {
 
     .about-me-header, .work-header, .contact-me-header {
-        font-size: 18px;
+        font-size: 19px;
     }
 
     header nav {
         font-size: 18px;
     }
 
-    .surf-container, .led-container, .calculator-container {
+    .scheduler-container, .movie-mate-container, .password-container {
         margin-bottom: 4px;
     }
 }
@@ -507,7 +539,7 @@ header nav ul li a {
 @media screen and (max-width: 752px) {
 
     .about-me-header, .work-header, .contact-me-header {
-        font-size: 17px;
+        font-size: 18px;
     }
 
     .header-box {
@@ -541,27 +573,27 @@ header nav ul li a {
         font-size: 14px;
     }
 
-    .led-container {
-        margin-right: 2px;
-    }
-    
-    .led-container:hover {
-        margin-right: 2px;
-    }
-    
-    .calculator-container {
-        margin-left: 2px;
-    }
-    
-    .calculator-container:hover {
-        margin-left: 2px;
-    }
-    
     .movie-mate-container {
         margin-right: 2px;
     }
     
     .movie-mate-container:hover {
+        margin-right: 2px;
+    }
+    
+    .password-container {
+        margin-left: 2px;
+    }
+    
+    .password-container:hover {
+        margin-left: 2px;
+    }
+    
+    .taskmaster-pro-container {
+        margin-right: 2px;
+    }
+    
+    .taskmaster-pro-container:hover {
         margin-right: 2px;
     }
     
@@ -573,13 +605,13 @@ header nav ul li a {
         margin-left: 2px;
     }
 
-    .surf-text, .led-text, .calculator-text, .movie-mate-text, .rb-text {
+    .scheduler-text, .movie-mate-text, .password-text, .taskmaster-pro-text, .rb-text {
         padding: 5px 7px;
         margin-bottom: 14px;
         font-size: smaller;
     }
     
-    .surf-text h4, .led-text h4, .calculator-text h4, .movie-mate-text h4, .rb-text h4 {
+    .scheduler-text h4, .movie-mate-text h4, .password-text h4, .taskmaster-pro-text h4, .rb-text h4 {
         font-weight: lighter;
         font-size: small;
     }
@@ -589,7 +621,7 @@ header nav ul li a {
 @media screen and (max-width: 690px) {
 
     .about-me-header, .work-header, .contact-me-header {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .header-box {
@@ -670,9 +702,10 @@ header nav ul li a {
 
     .about-me-header, .work-header, .contact-me-header {
     padding-right: 11px;
+    font-size: 16px;
     }
 
-    .surf-container {
+    .scheduler-container {
         height: 170px;
     }
 }
@@ -687,7 +720,7 @@ header nav ul li a {
     .about-me-header-container, .work-header-container, .contact-me-header-container {
     width: 100%;
     border-right: 0;
-    border-bottom: 2px solid #31343C;
+    border-bottom: 2px solid var(--secondary-color);
     }
     
     .about-me-header, .work-header, .contact-me-header {
@@ -695,14 +728,14 @@ header nav ul li a {
     padding: 0;
     margin-bottom: 4px;
     text-align: left;
-    font-size: 17px;
+    font-size: 19px;
     }
 
     .about-me-para-container, .projects-container, .contact-details-container {
         margin-top: 13px;
     }
 
-    .surf-container {
+    .scheduler-container {
         height: 150px;
     }
 }
@@ -714,43 +747,43 @@ header nav ul li a {
         display: block;
     }
 
-    .surf-container {
+    .scheduler-container {
         height: 150px;
     }
 
-    .surf-container:hover {
+    .scheduler-container:hover {
         height: 150px;
         width: 100%;
         display: flex;
     }
 
-    .led-container, .movie-mate-container {
+    .movie-mate-container, .taskmaster-pro-container {
         width: 100%;
         height: 150px;
         margin-right: 0;
     }
 
-    .calculator-container, .rb-container {
+    .password-container, .rb-container {
         width: 100%;
         height: 150px;
         margin-left: 0;
     }
 
-    .led-container:hover, .movie-mate-container:hover {
+    .movie-mate-container:hover, .taskmaster-pro-container:hover {
         height: 150px;
         width: 100%;
         display: flex;
         margin-right: 0px;
     }
 
-    .calculator-container:hover, .rb-container:hover {
+    .password-container:hover, .rb-container:hover {
         height: 150px;
         width: 100%;
         display: flex;
         margin-left: 0px;
     }
 
-    .movie-mate-container {
+    .taskmaster-pro-container {
         margin-bottom: 4px;
     }
 
