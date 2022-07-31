@@ -1,6 +1,6 @@
 :root {
     --primary-color: #bad9c9;
-    --secondary-color: #0B3954;
+    --secondary-color: #063550;
     --tertiary-color: #E6B89C;  
     --fourth-color:
   }
@@ -13,7 +13,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px;
+    scroll-padding-top: 100px;
   }
   
 
@@ -81,7 +81,7 @@ header nav ul li {
 }
 
 .box1, .box2, .box3, .box4 {
-    background-image: linear-gradient(to top, var(--primary-color) 50%, #0B3954 0%);
+    background-image: linear-gradient(to top, var(--primary-color) 50%, #063550 0%);
     background-position: top;  
 }
 
@@ -103,7 +103,7 @@ header nav ul li a {
 .hero {
     height: 250px;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     background-image: url("../images/bright-leaves.jpg");
     background-size: cover;
     background-position: bottom;
@@ -137,20 +137,20 @@ header nav ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .work {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .contact-me {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .about-me-header-container, .work-header-container, .contact-me-header-container {
@@ -184,7 +184,7 @@ header nav ul li a {
     color: black;
 }
 
-.scheduler-container {
+.weather-container {
     position: relative;
     height: 250px;
     width: 100%;
@@ -195,11 +195,11 @@ header nav ul li a {
     text-decoration: none;
 }
 
-.scheduler-container::before {
+.weather-container::before {
     content: '';
     position: absolute;
-    background-image: url("../images/scheduler.jpg");
-    background-position: right 30%;
+    background-image: url("../images/background.jpg");
+    background-position: left bottom 50%;
     background-size: cover;
     top: 0;
     right: 0;
@@ -208,15 +208,15 @@ header nav ul li a {
     opacity: 0.80;
 }
 
-.scheduler-container:hover {
+.weather-container:hover {
     height: 250px;
     position: relative;
     width: 100%;
     display: flex;
     align-items: flex-end;
     border: 3px solid var(--primary-color);
-    background-image: url("../images/scheduler.jpg");
-    background-position: right 30%;
+    background-image: url("../images/background.jpg");
+    background-position: left bottom 50%;
     background-size: cover;
 }
 
@@ -334,7 +334,7 @@ header nav ul li a {
     text-decoration: none;
 }
 
-.rb-container {
+.scheduler-container {
     position: relative;
     height: 120px;
     width: 49.5%;
@@ -345,11 +345,11 @@ header nav ul li a {
     text-decoration: none;
 }
 
-.rb-container::before {
+.scheduler-container::before {
     content: '';
     position: absolute;
-    background-image: url("../images/running-shoes-g071dfa150_1920.jpg");
-    background-position: center;
+    background-image: url("../images/scheduler.jpg");
+    background-position: center 30%;
     background-size: cover;
     top: 0;
     right: 0;
@@ -358,7 +358,7 @@ header nav ul li a {
     opacity: 0.80;
 }
 
-.rb-container:hover {
+.scheduler-container:hover {
     position: relative;
     height: 120px;
     width: 49.5%;
@@ -366,13 +366,13 @@ header nav ul li a {
     margin-left: 4px;
     align-items: flex-end;
     border: 3px solid var(--primary-color);
-    background-image: url("../images/running-shoes-g071dfa150_1920.jpg");
-    background-position: center;
+    background-image: url("../images/scheduler.jpg");
+    background-position: center 30%;
     background-size: cover;
     text-decoration: none;
 }
 
-.scheduler-text, .movie-mate-text, .password-text, .taskmaster-pro-text, .rb-text {
+.weather-text, .movie-mate-text, .password-text, .taskmaster-pro-text, .scheduler-text {
     background-color: var(--primary-color); 
     position: relative;
     color: var(--secondary-color);
@@ -380,7 +380,7 @@ header nav ul li a {
     margin-bottom: 15px;
 }
 
-.scheduler-text h4, .movie-mate-text h4, .password-text h4, .taskmaster-pro-text h4, .rb-text h4 {
+.weather-text h4, .movie-mate-text h4, .password-text h4, .taskmaster-pro-text h4, .scheduler-text h4 {
     font-weight: lighter;
     font-size: smaller;
 }
@@ -407,7 +407,7 @@ header nav ul li a {
 /* MEDIA QUERY - This will be applied to any screen between 1234px and 965px */
 @media screen and (max-width: 1234px) {
 
-      .scheduler-container {
+      .weather-container {
         margin-bottom: 6px;
     }
     
@@ -435,11 +435,11 @@ header nav ul li a {
         margin-right: 3px;
     }
     
-    .rb-container {
+    .scheduler-container {
         margin-left: 3px;
     }
     
-    .rb-container:hover {
+    .scheduler-container:hover {
         margin-left: 3px;
     }
 }
@@ -510,11 +510,11 @@ header nav ul li a {
         margin-right: 2.5px;
     }
     
-    .rb-container {
+    .scheduler-container {
         margin-left: 2.5px;
     }
     
-    .rb-container:hover {
+    .scheduler-container:hover {
         margin-left: 2.5px;
     }
 }
@@ -530,7 +530,7 @@ header nav ul li a {
         font-size: 18px;
     }
 
-    .scheduler-container, .movie-mate-container, .password-container {
+    .weather-container, .movie-mate-container, .password-container {
         margin-bottom: 4px;
     }
 }
@@ -597,21 +597,21 @@ header nav ul li a {
         margin-right: 2px;
     }
     
-    .rb-container {
+    .scheduler-container {
         margin-left: 2px;
     }
     
-    .rb-container:hover {
+    .scheduler-container:hover {
         margin-left: 2px;
     }
 
-    .scheduler-text, .movie-mate-text, .password-text, .taskmaster-pro-text, .rb-text {
+    .weather-text, .movie-mate-text, .password-text, .taskmaster-pro-text, .scheduler-text {
         padding: 5px 7px;
         margin-bottom: 14px;
         font-size: smaller;
     }
     
-    .scheduler-text h4, .movie-mate-text h4, .password-text h4, .taskmaster-pro-text h4, .rb-text h4 {
+    .weather-text h4, .movie-mate-text h4, .password-text h4, .taskmaster-pro-text h4, .scheduler-text h4 {
         font-weight: lighter;
         font-size: small;
     }
@@ -705,7 +705,7 @@ header nav ul li a {
     font-size: 16px;
     }
 
-    .scheduler-container {
+    .weather-container {
         height: 170px;
     }
 }
@@ -735,7 +735,7 @@ header nav ul li a {
         margin-top: 13px;
     }
 
-    .scheduler-container {
+    .weather-container {
         height: 150px;
     }
 }
@@ -747,11 +747,11 @@ header nav ul li a {
         display: block;
     }
 
-    .scheduler-container {
+    .weather-container {
         height: 150px;
     }
 
-    .scheduler-container:hover {
+    .weather-container:hover {
         height: 150px;
         width: 100%;
         display: flex;
@@ -763,7 +763,7 @@ header nav ul li a {
         margin-right: 0;
     }
 
-    .password-container, .rb-container {
+    .password-container, .scheduler-container {
         width: 100%;
         height: 150px;
         margin-left: 0;
@@ -776,7 +776,7 @@ header nav ul li a {
         margin-right: 0px;
     }
 
-    .password-container:hover, .rb-container:hover {
+    .password-container:hover, .scheduler-container:hover {
         height: 150px;
         width: 100%;
         display: flex;
