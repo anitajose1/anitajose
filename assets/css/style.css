@@ -191,7 +191,7 @@ header nav ul li a {
     display: flex;
     align-items: flex-end;
     border: 3px solid var(--primary-color);
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     text-decoration: none;
 }
 
@@ -225,10 +225,10 @@ header nav ul li a {
     height: 120px;
     width: 49.5%;
     display: flex;
-    margin-right: 4px;
+    margin-right: 5px;
     align-items: flex-end;
     border: 3px solid var(--primary-color);
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     text-decoration: none;
 }
 
@@ -250,7 +250,7 @@ header nav ul li a {
     height: 120px;
     width: 49.5%;
     display: flex;
-    margin-right: 4px;
+    margin-right: 5px;
     align-items: flex-end;
     border: 3px solid var(--primary-color);
     background-image: url("../images/background-image.webp");
@@ -263,10 +263,10 @@ header nav ul li a {
     height: 120px;
     width: 49.5%;
     display: flex;
-    margin-left: 4px;
+    margin-left: 5px;
     align-items: flex-end;
     border: 3px solid var(--primary-color);
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     text-decoration: none;
 }
 
@@ -288,7 +288,7 @@ header nav ul li a {
     height: 120px;
     width: 49.5%;
     display: flex;
-    margin-left: 4px;
+    margin-left: 5px;
     align-items: flex-end;
     border: 3px solid var(--primary-color);
     background-image: url("../images/password.jpg");
@@ -301,7 +301,7 @@ header nav ul li a {
     height: 120px;
     width: 49.5%;
     display: flex;
-    margin-right: 4px;
+    margin-right: 5px;
     align-items: flex-end;
     border: 3px solid var(--primary-color);
     text-decoration: none;
@@ -325,7 +325,7 @@ header nav ul li a {
     height: 120px;
     width: 49.5%;
     display: flex;
-    margin-right: 4px;
+    margin-right: 5px;
     align-items: flex-end;
     border: 3px solid var(--primary-color);
     background-image: url("../images/business-g65fd0d89f_1920.jpg");
@@ -339,7 +339,7 @@ header nav ul li a {
     height: 120px;
     width: 49.5%;
     display: flex;
-    margin-left: 4px;
+    margin-left: 5px;
     align-items: flex-end;
     border: 3px solid var(--primary-color);
     text-decoration: none;
@@ -363,7 +363,7 @@ header nav ul li a {
     height: 120px;
     width: 49.5%;
     display: flex;
-    margin-left: 4px;
+    margin-left: 5px;
     align-items: flex-end;
     border: 3px solid var(--primary-color);
     background-image: url("../images/scheduler.jpg");
@@ -404,43 +404,60 @@ header nav ul li a {
     color: black;
 }
 
+/* MEDIA QUERY - This will be applied to any screen between 1519px and 1234px */
+@media screen and (max-width: 1519px) {
+
+    .weather-container {
+      margin-bottom: 9px;
+  }
+  
+  .movie-mate-container, .taskmaster-pro-container {
+      margin-right: 4px;
+      width: 49.5%;
+  }
+  
+  .movie-mate-container:hover, .taskmaster-pro-container:hover {
+      margin-right: 4px;
+      width: 49.5%;
+  }
+  
+  .scheduler-container, .password-container {
+      margin-left: 4px;
+      width: 49.5%;
+  }
+  
+  .scheduler-container:hover, .password-container:hover {
+      margin-left: 4px;
+      width: 49.5%;
+  }
+}
+
+
 /* MEDIA QUERY - This will be applied to any screen between 1234px and 965px */
 @media screen and (max-width: 1234px) {
 
       .weather-container {
-        margin-bottom: 6px;
+        margin-bottom: 9px;
     }
     
-    .movie-mate-container {
-        margin-right: 3px;
+    .movie-mate-container, .taskmaster-pro-container {
+        margin-right: 3.8px;
+        width: 49.4%;
     }
     
-    .movie-mate-container:hover {
-        margin-right: 3px;
+    .movie-mate-container:hover, .taskmaster-pro-container:hover  {
+        margin-right: 3.8px;
+        width: 49.4%;
     }
     
-    .password-container {
-        margin-left: 3px;
+    .scheduler-container, .password-container {
+        margin-left: 3.8px;
+        width: 49.4%;
     }
     
-    .password-container:hover {
-        margin-left: 3px;
-    }
-    
-    .taskmaster-pro-container {
-        margin-right: 3px;
-    }
-    
-    .taskmaster-pro-container:hover {
-        margin-right: 3px;
-    }
-    
-    .scheduler-container {
-        margin-left: 3px;
-    }
-    
-    .scheduler-container:hover {
-        margin-left: 3px;
+    .scheduler-container:hover, .password-container:hover {
+        margin-left: 3.8px;
+        width: 49.4%;
     }
 }
 
@@ -481,41 +498,25 @@ header nav ul li a {
     .taskmaster-pro-container:hover {
         background-position: left;
     }
-}
 
-/* This will be applied to any screen between 903px and 840px */
-@media screen and (max-width: 903px) {
-    
-    .movie-mate-container {
-        margin-right: 2.5px;
+    .movie-mate-container, .taskmaster-pro-container {
+        margin-right: 4px;
+        width: 49.2%;
     }
     
-    .movie-mate-container:hover {
-        margin-right: 2.5px;
+    .movie-mate-container:hover, .taskmaster-pro-container:hover {
+        margin-right: 4px;
+        width: 49.2%;
+    }
+
+    .scheduler-container, .password-container {
+        margin-left: 4px;
+        width: 49.2%;
     }
     
-    .password-container {
-        margin-left: 2.5px;
-    }
-    
-    .password-container:hover {
-        margin-left: 2.5px;
-    }
-    
-    .taskmaster-pro-container {
-        margin-right: 2.5px;
-    }
-    
-    .taskmaster-pro-container:hover {
-        margin-right: 2.5px;
-    }
-    
-    .scheduler-container {
-        margin-left: 2.5px;
-    }
-    
-    .scheduler-container:hover {
-        margin-left: 2.5px;
+    .scheduler-container:hover, .password-container:hover {
+        margin-left: 4px;
+        width: 49.2%;
     }
 }
 
@@ -531,7 +532,27 @@ header nav ul li a {
     }
 
     .weather-container, .movie-mate-container, .password-container {
-        margin-bottom: 4px;
+        margin-bottom: 8px;
+    }
+
+    .movie-mate-container, .taskmaster-pro-container {
+        margin-right: 3.7px;
+        width: 49.2%;
+    }
+    
+    .movie-mate-container:hover, .taskmaster-pro-container:hover {
+        margin-right: 3.7px;
+        width: 49.2%;
+    }
+
+    .scheduler-container, .password-container {
+        margin-left: 3.7px;
+        width: 49.2%;
+    }
+    
+    .scheduler-container:hover, .password-container:hover {
+        margin-left: 3.7px;
+        width: 49.2%;
     }
 }
 
@@ -573,38 +594,26 @@ header nav ul li a {
         font-size: 14px;
     }
 
-    .movie-mate-container {
-        margin-right: 2px;
+    .movie-mate-container, .taskmaster-pro-container {
+        margin-right: 3.7px;
+        width: 49.1%;
     }
     
-    .movie-mate-container:hover {
-        margin-right: 2px;
-    }
-    
-    .password-container {
-        margin-left: 2px;
-    }
-    
-    .password-container:hover {
-        margin-left: 2px;
-    }
-    
-    .taskmaster-pro-container {
-        margin-right: 2px;
-    }
-    
-    .taskmaster-pro-container:hover {
-        margin-right: 2px;
-    }
-    
-    .scheduler-container {
-        margin-left: 2px;
-    }
-    
-    .scheduler-container:hover {
-        margin-left: 2px;
+    .movie-mate-container:hover, .taskmaster-pro-container:hover {
+        margin-right: 3.7px;
+        width: 49.1%;
     }
 
+    .scheduler-container, .password-container {
+        margin-left: 3.7px;
+        width: 49.1%;
+    }
+    
+    .scheduler-container:hover, .password-container:hover {
+        margin-left: 3.7px;
+        width: 49.1%;
+    }
+    
     .weather-text, .movie-mate-text, .password-text, .taskmaster-pro-text, .scheduler-text {
         padding: 5px 7px;
         margin-bottom: 14px;
@@ -649,6 +658,26 @@ header nav ul li a {
     .about-me-para {
         font-size: 13px;
         line-height: 1.3;
+    }
+
+    .movie-mate-container, .taskmaster-pro-container {
+        margin-right: 3px;
+        width: 49.2%;
+    }
+    
+    .movie-mate-container:hover, .taskmaster-pro-container:hover {
+        margin-right: 3px;
+        width: 49.2%;
+    }
+
+    .scheduler-container, .password-container {
+        margin-left: 3px;
+        width: 49.2%;
+    }
+    
+    .scheduler-container:hover, .password-container:hover {
+        margin-left: 3px;
+        width: 49.2%;
     }
 }
 
@@ -763,17 +792,17 @@ header nav ul li a {
         margin-right: 0;
     }
 
-    .password-container, .scheduler-container {
-        width: 100%;
-        height: 150px;
-        margin-left: 0;
-    }
-
     .movie-mate-container:hover, .taskmaster-pro-container:hover {
         height: 150px;
         width: 100%;
         display: flex;
         margin-right: 0px;
+    }
+
+    .password-container, .scheduler-container {
+        width: 100%;
+        height: 150px;
+        margin-left: 0;
     }
 
     .password-container:hover, .scheduler-container:hover {
@@ -783,8 +812,8 @@ header nav ul li a {
         margin-left: 0px;
     }
 
-    .taskmaster-pro-container {
-        margin-bottom: 4px;
+    .scheduler-container, .taskmaster-pro-container {
+        margin-bottom: 8px;
     }
 
     .contact-details-container ul {
