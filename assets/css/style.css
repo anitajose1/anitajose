@@ -334,7 +334,7 @@ header nav ul li a {
     text-decoration: none;
 }
 
-.scheduler-container {
+.stock-buddy {
     position: relative;
     height: 120px;
     width: 49.5%;
@@ -345,10 +345,10 @@ header nav ul li a {
     text-decoration: none;
 }
 
-.scheduler-container::before {
+.stock-buddy::before {
     content: '';
     position: absolute;
-    background-image: url("../images/scheduler.jpg");
+    background-image: url("../images/stock-buddy.jpg");
     background-position: center 30%;
     background-size: cover;
     top: 0;
@@ -358,7 +358,7 @@ header nav ul li a {
     opacity: 0.80;
 }
 
-.scheduler-container:hover {
+.stock-buddy:hover {
     position: relative;
     height: 120px;
     width: 49.5%;
@@ -366,7 +366,7 @@ header nav ul li a {
     margin-left: 5px;
     align-items: flex-end;
     border: 3px solid var(--primary-color);
-    background-image: url("../images/scheduler.jpg");
+    background-image: url("../images/stock-buddy.jpg");
     background-position: center 30%;
     background-size: cover;
     text-decoration: none;
@@ -421,12 +421,12 @@ header nav ul li a {
       width: 49.5%;
   }
   
-  .scheduler-container, .password-container {
+  .stock-buddy, .password-container {
       margin-left: 4px;
       width: 49.5%;
   }
   
-  .scheduler-container:hover, .password-container:hover {
+  .stock-buddy:hover, .password-container:hover {
       margin-left: 4px;
       width: 49.5%;
   }
@@ -450,12 +450,12 @@ header nav ul li a {
         width: 49.4%;
     }
     
-    .scheduler-container, .password-container {
+    .stock-buddy, .password-container {
         margin-left: 3.8px;
         width: 49.4%;
     }
     
-    .scheduler-container:hover, .password-container:hover {
+    .stock-buddy:hover, .password-container:hover {
         margin-left: 3.8px;
         width: 49.4%;
     }
@@ -509,12 +509,12 @@ header nav ul li a {
         width: 49.2%;
     }
 
-    .scheduler-container, .password-container {
+    .stock-buddy, .password-container {
         margin-left: 4px;
         width: 49.2%;
     }
     
-    .scheduler-container:hover, .password-container:hover {
+    .stock-buddy:hover, .password-container:hover {
         margin-left: 4px;
         width: 49.2%;
     }
@@ -545,12 +545,12 @@ header nav ul li a {
         width: 49.2%;
     }
 
-    .scheduler-container, .password-container {
+    .stock-buddy, .password-container {
         margin-left: 3.7px;
         width: 49.2%;
     }
     
-    .scheduler-container:hover, .password-container:hover {
+    .stock-buddy:hover, .password-container:hover {
         margin-left: 3.7px;
         width: 49.2%;
     }
@@ -604,12 +604,12 @@ header nav ul li a {
         width: 49.1%;
     }
 
-    .scheduler-container, .password-container {
+    .stock-buddy, .password-container {
         margin-left: 3.7px;
         width: 49.1%;
     }
     
-    .scheduler-container:hover, .password-container:hover {
+    .stock-buddy:hover, .password-container:hover {
         margin-left: 3.7px;
         width: 49.1%;
     }
@@ -670,12 +670,12 @@ header nav ul li a {
         width: 49.2%;
     }
 
-    .scheduler-container, .password-container {
+    .stock-buddy, .password-container {
         margin-left: 3px;
         width: 49.2%;
     }
     
-    .scheduler-container:hover, .password-container:hover {
+    .stock-buddy:hover, .password-container:hover {
         margin-left: 3px;
         width: 49.2%;
     }
@@ -799,20 +799,20 @@ header nav ul li a {
         margin-right: 0px;
     }
 
-    .password-container, .scheduler-container {
+    .password-container, .stock-buddy {
         width: 100%;
         height: 150px;
         margin-left: 0;
     }
 
-    .password-container:hover, .scheduler-container:hover {
+    .password-container:hover, .stock-buddy:hover {
         height: 150px;
         width: 100%;
         display: flex;
         margin-left: 0px;
     }
 
-    .scheduler-container, .taskmaster-pro-container {
+    .stock-buddy, .taskmaster-pro-container {
         margin-bottom: 8px;
     }
 
